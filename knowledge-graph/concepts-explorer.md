@@ -52,8 +52,7 @@ Every kind 9998 or 39998 event will be obtained, using the following filter:
 
 ```json
 {
-    "kinds": [9999, 39999],
-    "#z": [<z-tag of the list header>]
+    "kinds": [9999, 39999]
 }
 ```
 
@@ -61,6 +60,9 @@ For each list, there will be a _list header UUID_ which is ether an event id (fo
 
 Each item on the table will have 3 columns:
 - name (plural) of the list header
+- UUID
+- list type: DList, Structured, etc
+- link to its page
 
 ## Structured List: List Items
 
