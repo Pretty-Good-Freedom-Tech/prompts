@@ -64,6 +64,8 @@ relationship types:
 
 properties: `wot_score` and `recognized_by_wot` will be properties of each "canonical" brainstorm knowledge graph node type and relation
 
+
+
 # Pages
 
 ## Settings Page
@@ -179,6 +181,25 @@ OPTIONAL MATCH (s)-[:CLASS_THREAD_PROPAGATION (between 0 and infinity)]->(sub:Se
 RETURN ...
 ```
 
+The table of list items will have the following columns:
+- name (singular)
+- name (plural)
+- description
+- uuid
+- kind
+- author
+- wot score of list item
+
+### DCoSL Control Panel
+
+There will be a selector to determine how the wot score of list items is calculated, with these options:
+- manual
+- my follows
+- rank (default) (separate element to set threshold, with default 10)
+- other list (separate selector to pick Trusted List)
+
+There will be a button to save as a Trusted List.
+
 ## Structured List: Tree Structure Graph
 
 `<baseUrl>/list/structured?uuid=<list_header_uuid>`
@@ -193,10 +214,24 @@ OPTIONAL MATCH (s)-[:CLASS_THREAD_PROPAGATION (between 0 and infinity)]->(sub:Se
 RETURN ...
 ```
 
-Then show results of query graphically. 
+Then show results of query graphically.
+
+DCoSL Control Panels:
+- for the list of sets
+- for the list of CLASS_THREAD_INITIATION, CLASS_THREAD_PROPAGATION, and CLASS_THREAD_TERMINATION relationships
 
 ## Object Oriented List
 
 `<baseUrl>/list/object-oriented?uuid=<list_header_uuid>`
+
+Data will be obtained from neo4j using the cypher query:
+(work in progress)
+
+DCoSL Control Panels:
+- for the list of properties
+- for the list of IS_A_PROPERTY_OF relationships
+
+
+
 
 
