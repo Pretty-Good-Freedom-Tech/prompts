@@ -90,14 +90,14 @@ These are a list of kind 9998 and 39998 events that are integral to the formatio
 
 These are the "canonical" Knowledge Graph relationship types:
 
-| relationship type | uuid |
-| --- | --- |
-| CLASS_THREAD_INITIATION | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:24bc3eb6-fd75-4679-a3d7-d0b1a2a62be8 |
-| CLASS_THREAD_PROPAGATION | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:e65edc7b-5f33-436a-a7b5-c8092da85d18 |
-| CLASS_THREAD_TERMINATION | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:cad330c4-be50-4fa0-8178-0982078b908a |
-| IS_A_PROPERTY_OF | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:9a74ffbd-33c6-456a-a5a9-9711d504e81d |
-| IS_THE_JSON_SCHEMA_FOR | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:86ac71be-eab8-4b15-bb17-313b8378d2e5 |
-| ENUMERATES | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:d0b4f08e-df4a-4131-a75c-e5bd056e4d78 |
+| relationship type | alias | uuid |
+| --- | --- | --- |
+| CLASS_THREAD_INITIATION | IS_THE_CONCEPT_FOR | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:24bc3eb6-fd75-4679-a3d7-d0b1a2a62be8 |
+| CLASS_THREAD_PROPAGATION | IS_A_SUPERSET_OF | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:e65edc7b-5f33-436a-a7b5-c8092da85d18 |
+| CLASS_THREAD_TERMINATION | HAS_ELEMENT | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:cad330c4-be50-4fa0-8178-0982078b908a |
+| IS_A_PROPERTY_OF | | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:9a74ffbd-33c6-456a-a5a9-9711d504e81d |
+| IS_THE_JSON_SCHEMA_FOR | | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:86ac71be-eab8-4b15-bb17-313b8378d2e5 |
+| ENUMERATES | | 39999:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:d0b4f08e-df4a-4131-a75c-e5bd056e4d78 |
 
 For each item, the user will have the ability to replace the default naddr with an naddr of the user's choosing. For each item, there will also be a button to restore default naddr.
 
@@ -105,10 +105,10 @@ For each item, the user will have the ability to replace the default naddr with 
 
 | name | relays |
 | --- | --- |
-| `aDlistRelays` | `wss://dcosl.brainstorm.world` |
+| `aDListRelays` | `wss://dcosl.brainstorm.world` |
 | `aTrustedAssertionPreferenceRelays` | `wss://nip85.nostr.band`, `wss://nip85.brainstorm.world`, `wss://nip85.nostr1.com` |
 | `aPopularRelays` | `wss://relay.damus.io`, `wss://relay.primal.net`, `wss://relay.nostr.band` |
-| aOutbox | `null` |
+| `aOutbox` | `null` |
 
 For `aDlistRelays` and `aTrustedAssertionPreferenceRelays`, the user will have the ability to replace the dafault relays with relays of the user's choosing. There will also be a "restore defaults" for each of these options.
 
