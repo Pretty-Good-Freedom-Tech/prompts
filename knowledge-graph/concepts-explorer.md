@@ -210,7 +210,7 @@ Data will be obtained from neo4j using the cypher query:
 
 ```
 MATCH (n:ListHeader {uuid:<uuid>})-[:CLASS_THREAD_INITIATION]->(s:Superset)
-OPTIONAL MATCH (s)-[:CLASS_THREAD_PROPAGATION (between 0 and infinity)]->(sub:Set)-[:CLASS_THREAD_TERMINATION]->(i:ListItem {z:"<list_header_uuid>"})
+OPTIONAL MATCH (s)-[:CLASS_THREAD_PROPAGATION *0..5]->(sub:Set)-[:CLASS_THREAD_TERMINATION]->(i:ListItem {z:"<list_header_uuid>"})
 RETURN ...
 ```
 
@@ -225,13 +225,37 @@ DCoSL Control Panels:
 `<baseUrl>/list/object-oriented?uuid=<list_header_uuid>`
 
 Data will be obtained from neo4j using the cypher query:
-(work in progress)
+```
+MATCH p = (n:ListHeader {uuid:<uuid>})<-[:IS_A_PROPERTY_OF *0..5]-(p:Property) RETURN p
+```
+
+### Table of Properties
+
+table columns:
+- property name
+- property type
+- uuid with link to individual property info page
+- button to reveal raw event below table
+- wot score
+- upvote or downvote button
+
+### Table of relationships
+
+table columns
+- nodeFrom
+- relationship type
+- nodeTo
+- uuid with link to individual relationship info page
+- wot score
 
 DCoSL Control Panels:
 - for the list of properties
 - for the list of IS_A_PROPERTY_OF relationships
 
+## individual node page
 
+`<baseUrl>/node?uuid=<uuid>`
 
+Show all information about an individual node, including a table of all reactions
 
 
