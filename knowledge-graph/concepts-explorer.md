@@ -106,7 +106,7 @@ For each item, the user will have the ability to replace the default naddr with 
 | name | relays |
 | --- | --- |
 | `aDlistRelays` | `wss://dcosl.brainstorm.world` |
-| `aTrustedAssertionPreferenceRelays` | `wss://nip85.nostr.band`, `wss://nip85.brainstorm.world` |
+| `aTrustedAssertionPreferenceRelays` | `wss://nip85.nostr.band`, `wss://nip85.brainstorm.world`, `wss://nip85.nostr1.com` |
 | `aPopularRelays` | `wss://relay.damus.io`, `wss://relay.primal.net`, `wss://relay.nostr.band` |
 | aOutbox | `null` |
 
