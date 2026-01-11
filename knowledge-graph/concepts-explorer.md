@@ -76,7 +76,7 @@ The Settings page allows the user to manage items that are necessary for the app
 
 These are a list of kind 9998 and 39998 events that are integral to the formation of a Concept. These are also referred to as the "canonical" Brainstorm Knowledge Graph node types.
 
-| list header | event id or naddr |
+| list header | uuid (event id or naddr) |
 | --- | --- |
 | relationships | 39998:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f: |
 | relationship types | 39998:e5272de914bd301755c439b88e6959a43c9d2664831f093c51e9c799a16a102f:826fa669-b494-46bd-9326-97b894c70d8b |
