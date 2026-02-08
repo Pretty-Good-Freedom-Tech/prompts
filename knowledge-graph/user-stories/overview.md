@@ -17,7 +17,7 @@ Miles Davis and his colleagues Dizzy and Charlie keep updated lists of songs, or
 
 An example of a *crowdscreened group.*
 
-## Dawn solves proof of personhood
+## [Dawn solves proof of personhood](./Dawn-solves-proof-of-personhood.md)
 
 Dawn creates a 9999 attestation: endorse an npub as human being
 
