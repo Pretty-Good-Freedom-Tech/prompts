@@ -9,7 +9,7 @@ These are their stories.
 
 Julie builds an app called EPOCH Music that supports WoT-empowered content discovery by enabling users to place bounties on the music they are looking for. Only trusted pubkeys can receive bounties, which are paid out automatically.
 
-## [Miles shares his knowledge of jazz with the world](https://www.notion.so/Miles-shares-his-knowledge-of-jazz-with-the-world-2ff0dd16b66580baa6b5cbfe3eceeace?pvs=21)
+## [Miles shares his knowledge of jazz with the world](./Miles-shares-his-knowledge-of-jazz-with-the-world.md)
 
 Miles Davis and his colleagues Dizzy and Charlie keep updated lists of songs, organized by sub genres that are invented in real time. Miles recognizes Dizzy and Charlie as more knowledgeable than he is on certain sub genres, so he defers to them on those topics. The world defers to Miles, and Miles defers to Dizzy and Charlie. The result: the world watches jazz be invented in real time, courtesy of the Brainstorm.
 
